@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<style>
+body {
+  font-family: Arial;
+  background-color: white;
+}
+
+.header {
+  background-color: black;
+  color: yellow;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  background-color: grey;
+  padding: 8px;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+form {
+  width: 450px;
+  margin: 20px auto;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Register</h1>
+</div>
+
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="team.html">Team</a>
+  <a href="register.html">Register</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<form action="#" method="post">
+
+  <h2>Personal Info</h2>
+
+  <label>First Name:</label>
+  <input type="text" name="fname" placeholder="Enter first name" />
+
+  <label>Last Name:</label>
+  <input type="text" name="lname" placeholder="Enter last name" />
+
+  <label>Date of Birth:</label>
+  <input type="date" name="dob" />
+
+  <label>Phone:</label>
+  <input type="tel" name="phone" placeholder="Enter phone number" />
+
+  <label>Gender:</label><br>
+  <input type="radio" name="gender" value="male" /> Male
+  <input type="radio" name="gender" value="female" /> Female
+  <input type="radio" name="gender" value="other" /> Other
+  <br><br>
+
+  <h2>Account Info</h2>
+
+  <label>Username:</label>
+  <input type="text" name="username" placeholder="Choose username" />
+
+  <label>Email:</label>
+  <input type="email" name="email" placeholder="Enter email" />
+
+  <label>Password:</label>
+  <input type="password" name="password" placeholder="Enter password" />
+
+  <label>Confirm Password:</label>
+  <input type="password" name="confirm" placeholder="Repeat password" />
+
+  <h2>Preferences</h2>
+
+  <label>Favourite Sideman:</label>
+  <select name="favourite">
+    <option>Harry</option>
+    <option>Simon</option>
+    <option>Tobi</option>
+    <option>Ethan</option>
+    <option>Vick</option>
+    <option>Josh</option>
+    <option>KSI</option>
+  </select>
+
+  <label>Content you like:</label><br>
+  <input type="checkbox" name="c1" /> Challenges<br>
+  <input type="checkbox" name="c2" /> FIFA<br>
+  <input type="checkbox" name="c3" /> Vlogs<br>
+  <input type="checkbox" name="c4" /> Sidemen Sundays<br>
+  <br>
+
+  <label>Country:</label>
+  <select name="country">
+    <option>United Kingdom</option>
+    <option>United States</option>
+    <option>Somalia</option>
+    <option>Nigeria</option>
+    <option>Other</option>
+  </select>
+
+  <label>About You:</label>
+  <textarea name="bio" rows="3" placeholder="Write something..."></textarea>
+
+  <label>Profile Picture:</label>
+  <input type="file" name="pic" /><br><br>
+
+  <input type="checkbox" name="terms" /> I agree to the terms<br><br>
+
+  <input type="submit" value="Register" />
+
+</form>
+
+<div class="footer">
+  <p>Sidemen Website 2024</p>
+</div>
+
+</body>
+</html>
